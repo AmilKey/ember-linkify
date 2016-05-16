@@ -34,6 +34,20 @@ ember install ember-linkify
 {{linkify text}}
 ```
 
+##### You can specify options to the helper such as 'urlLength' which shortens the URL by 'urlLength' and add 3 dots to the end 
+
+
+```hbs
+{{linkify text urlLength=30}}
+```
+
+
+##### Also use options to specify attributes you want to add to the generated anchor tags. Currently, "rel" is the only recognized attribute.
+
+```hbs
+{{linkify text rel='nofollow'}}
+```
+
 ## Development
 
 ### Installation
